@@ -25,9 +25,19 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+# elasticsearch ruby client
+gem 'elasticsearch'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-nav'
+  gem 'pry-theme'
+  gem 'pry-stack_explorer'
+  # rails console helper
+  gem 'awesome_print'
 end
 
 group :development do
